@@ -1,13 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "../App.css";
 
 const Login = () => {
   return (
-    <section class="bg-gray-900">
+    <section>
       <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-        <div class="w-full rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-gray-800 border-gray-700">
+        <div class="w-full rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-gray-800 border-gray-400">
           <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
             <h1 class="text-xl font-bold leading-tight tracking-tight md:text-2xl text-white">
-              Sign in to your account
+              Login to your account
             </h1>
             <form
               class="space-y-4 md:space-y-6"
@@ -72,18 +74,18 @@ const Login = () => {
               </div>
               <button
                 type="submit"
-                class="w-full text-white bg-gray-600 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-primary-600 hover:bg-gray-700 focus:ring-gray-800 transition"
+                class="w-full text-white bg-[#14819c] focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-primary-600 hover:bg-[#346774] focus:ring-gray-800 transition"
               >
                 Sign in
               </button>
               <p class="text-sm font-light text-gray-400">
                 Don't have an account yet?{" "}
-                <a
-                  href="#"
-                  class="font-medium text-primary-600 hover:underline text-primary-500"
+                <Link
+                  to={"/signup"}
+                  class="font-medium text-primary-600 hover:underline text-[#14819c]"
                 >
                   Sign up
-                </a>
+                </Link>
               </p>
             </form>
           </div>
