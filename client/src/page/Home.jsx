@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { ImCross } from "react-icons/im";
 import { BsRecordCircleFill } from "react-icons/bs";
+import "../App.css";
 
 const Home = (props) => {
   const [isChecked, setIsChecked] = useState(true);
@@ -56,7 +57,7 @@ const Home = (props) => {
           </div>
         </div>
         <p className="text-center text-gray-300 mt-3 font-semibold text-[14px]">
-          REMEMBER X GOES ONCE
+          REMEMBER X GOES FIRST
         </p>
       </div>
       <Link
