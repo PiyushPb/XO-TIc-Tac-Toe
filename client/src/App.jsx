@@ -10,6 +10,7 @@ import {
 import Home from "./page/Home";
 import Signup from "./page/Signup";
 import Login from "./page/Login";
+import VsCpu from "./page/VsCpu";
 import Error from "./page/Error";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/vscpu" element={<VsCpu />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </Router>
