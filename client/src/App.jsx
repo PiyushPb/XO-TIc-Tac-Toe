@@ -14,15 +14,21 @@ import VsCpu from "./page/VsCpu";
 import Error from "./page/Error";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [vsCpuFirstTurn, setVsCpuFirstTurn] = useState(false);
 
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={<Home setVsCpuFirstTurn={setVsCpuFirstTurn} />}
+        />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/vscpu" element={<VsCpu />} />
+        <Route
+          path="/vscpu"
+          element={<VsCpu vsCpuFirstTurn={vsCpuFirstTurn} />}
+        />
         <Route path="*" element={<Error />} />
       </Routes>
     </Router>

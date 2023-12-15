@@ -4,27 +4,29 @@ import { BsRecordCircleFill } from "react-icons/bs";
 import { GrPowerReset } from "react-icons/gr";
 
 const GameHeader = (props) => {
-  const [currentMove, setCurrentMove] = useState(1);
+  const currentPlay = props.firstPlay;
+  console.log(currentPlay);
+  const [currentMove, setCurrentMove] = useState(0);
   const [win, setWin] = useState("");
 
-//   useEffect(() => {
-//     setCurrentMove((prevMove) => (prevMove === 1 ? 0 : 1));
-//   }, [props.currentPlayer]);
+  //   useEffect(() => {
+  //     setCurrentMove((prevMove) => (prevMove === 1 ? 0 : 1));
+  //   }, [props.currentPlayer]);
 
-//   useEffect(() => {
-//     // console.log("Current player turn : ", currentPlayer); // Debuging
-//     if (props.gameLogic(props.board)) {
-//       // console.log(
-//       //   (props.currentPlayer === "player" ? "CPU" : "Player") + " won the game"
-//       // );
-//       setWin(props.currentPlayer);
-//       return;
-//     }
-//   }, [props.currentPlayer]);
+  //   useEffect(() => {
+  //     // console.log("Current player turn : ", currentPlayer); // Debuging
+  //     if (props.gameLogic(props.board)) {
+  //       // console.log(
+  //       //   (props.currentPlayer === "player" ? "CPU" : "Player") + " won the game"
+  //       // );
+  //       setWin(props.currentPlayer);
+  //       return;
+  //     }
+  //   }, [props.currentPlayer]);
 
-//   useEffect(() => {
-//     console.log("Winner: ", win);
-//   }, [win]);
+  //   useEffect(() => {
+  //     console.log("Winner: ", win);
+  //   }, [win]);
 
   return (
     <div className="grid grid-cols-3 justify-between items-center w-full mb-5 gap-10">
