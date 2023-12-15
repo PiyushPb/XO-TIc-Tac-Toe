@@ -13,6 +13,7 @@ const Home = (props) => {
   };
 
   const handleVsPlayerClick = (event) => {
+    alert("Under development");
     // console.log(props.isUserLoggedin);
     // props.setIsUserLoggedin(!props.isUserLoggedin);
   };
