@@ -5,10 +5,11 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  BrowserRouter,
 } from "react-router-dom";
 
 import Home from "./page/Home";
+import Signup from "./page/Signup";
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,6 +18,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/signup" element={<Signup />} />
+
       </Routes>
     </Router>
   );
