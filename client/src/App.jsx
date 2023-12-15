@@ -11,6 +11,7 @@ import {
 import Home from "./page/Home";
 import Signup from "./page/Signup";
 import Login from "./page/Login";
+import Error from "./page/Error";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </Router>
   );
